@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+span{
+    font-family: 'Mali', cursive;
+    font-weight:300;
+    font-size: 36px;
+    color: #88231D;
+}
+
+span b{
+    font-size: 24px;
+}
+
+span.switch{
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #B3E3E9;
+    font-family: 'Mali', cursive;
+    color: #DD6C03;
+    transition: all 2s;
+    
+}
+
+body.switch {
+    background-color: #1F464A;
+    color: #DD6C03;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+    width: 1100px;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+    border: solid 2px #FFFFFF;
+    border-radius: 3px;
+}
+
+#banner.switch {
+    transition: all 2s;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+    width: 1100px;
+}
+
+main section {
+    width: 25%;
+    border: 2px #FFFFFF solid;
+    margin: 0 .25em;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: #88231D;
+}
+
+section a:hover {
+    background-color: #1F464A;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+section.switch a {
+    color: #FFFFFF;
+}
+
+section.switch a:hover {
+    background-color: #B3E3E9;
+    color: #88231D;
+    border-radius: 3px;
+}
+
+button {
+    position: absolute;
+    top: 55px;
+    right: 132px;
+    padding: 12px;
+    background-color: #1F464A;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #DD6C03;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: #B3E3E9;
+    color: #88231D;
+}
+
+button.switch:hover {
+    background-color: #DD6C03;
+    color: rgb(235, 235, 235);
+}
+
+#footer{
+    width: 1100px;
+    margin: auto;
+    padding-top: 5px;
+    
+}
