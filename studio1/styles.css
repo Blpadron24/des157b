@@ -1,0 +1,115 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+
+
+.overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(195, 181, 25, 0.192);
+  }
+
+  .overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(199, 100, 89, 0.192);
+  }
+
+#line1{
+    font-family: 'Tourney', cursive;
+    position: absolute;
+    bottom: 55%; left: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 600;
+    transition: all 2s;
+}
+#line2{
+    font-family: 'Tourney', cursive;
+    position: absolute;
+    bottom: 45%; left: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 600;
+    transition: all 2s
+}
+
+#line3{
+    font-family: 'Tourney', cursive;
+    position: absolute;
+    bottom: 35%; left: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 600;
+    transition: all 2s
+    
+    
+}
+
+
+#line4{
+    font-family: 'Tourney', cursive;
+    position: absolute;
+    bottom: 25%; left: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 600;
+    transition: all 2s
+    
+}
+
+p{
+    text-shadow: 2px 2px rgba(18, 18, 18, 0.74);
+}
+
+.hidden {
+    opacity:0;
+}
+
+.showing {
+    opacity: 1;
+}
+.fa-house{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+.fa-house:hover{
+    cursor: pointer;
+    
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+.fa-expand:hover{
+    cursor: pointer;
+    
+}
