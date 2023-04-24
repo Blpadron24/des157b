@@ -12,5 +12,18 @@
 }
 
 body{
+    width: 1100px;
     background-color: #1F464A;
+    font-family: 'Mali', cursive;
+    color: #ffff;
+    font-size: 35px;
+}
+
+main{
+    
+    
+}
+section .heroPage {
+    margin: auto;
+    display: block;
 }
