@@ -1,8 +1,8 @@
 .fa-house{
     position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 36px;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
 }
 
@@ -11,19 +11,46 @@
     
 }
 
+p  {
+    margin-top: 15px;
+    max-width: 700px;
+    padding-left: 10px;
+}
+
+#heroImg {
+    margin: auto;
+    width: 700px;
+    
+}
+
+
+
 body{
     width: 1100px;
     background-color: #1F464A;
     font-family: 'Mali', cursive;
     color: #ffff;
-    font-size: 35px;
+    font-size: 22px;
+    margin: auto;
+   
 }
 
 main{
-    
-    
+    margin-top: 150px;
 }
-section .heroPage {
+
+#heroPage {
+   
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
     margin: auto;
-    display: block;
+   
 }
+
+
+
+
+
+
