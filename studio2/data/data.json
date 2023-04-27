@@ -2,49 +2,49 @@
     "point 1" : {
         "day" : "4/20",
         "time" : "8:50 pm",
-        "cat" : "Dexter & Woody"
+        "cat" : "0"
     },
 
     "point 2" : {
         "day" : "4/20",
         "time" : "9:02 pm",
-        "cat" : "Dexter"
+        "cat" : "1"
     },
 
     "point 3" : {
         "day" : "4/20",
         "time" : "9:38 pm",
-        "cat" : "Dexter"
+        "cat" : "2"
     },
 
     "point 4" : {
         "day" : "4/21",
         "time" : "9:09 pm",
-        "cat" : "Dexter"
+        "cat" : "3"
     },
 
     "point 5" : {
         "day" : "4/21",
         "time" : "9:11 pm",
-        "cat" : "Woody"
+        "cat" : "4"
     },
 
     "point 6" : {
         "day" : "4/21",
         "time" : "9:23 pm",
-        "cat" : "Dexter"
+        "cat" : "5"
     },
 
     "point 7" : {
         "day" : "4/22",
         "time" : "7:15 pm",
-        "cat" : "Dexter & Woody"
+        "cat" : "6"
     },
 
     "point 8" : {
         "day" : "4/22",
         "time" : "7:32 pm",
-        "cat" : "Dexter"
+        "cat" : "7"
     }
 
 

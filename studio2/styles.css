@@ -36,21 +36,102 @@ body{
 }
 
 main{
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 #heroPage {
-   
+   position: relative;
     display: flex;
     flex-direction: column;
-   
     align-items: center;
     margin: auto;
    
 }
 
+#pdata{
+    font-weight: 900;
+    font-size: 34px;
+}
 
+#pdata span {
+    font-weight: 400;
+    font-size: 24px;
+}
 
+#data{
+    position: absolute;
+    display: flex;
+   gap: 750px;
+   top: 50%;
+   padding-left: 10px;
+}
 
+#woody1{
+    position: absolute;
+    width: 62px;
+    top: 56%;
+    right: 35%;
+}
 
+#dex1 {
+    position: absolute;
+    width: 110px;
+    top: 63%;
+    right: 55%;
+}
 
+#dex2 {
+    position: absolute;
+    width: 129px;
+    top: 45.5%;
+    right: 30%;
+}
+
+#dex3{
+    position: absolute;
+    width: 62px;
+    top: 39%;
+    right: 60%;
+}
+
+#dex4 {
+    position: absolute;
+    width: 110px;
+    top: 63%;
+    right: 35%;
+}
+
+#woody2 {
+    position: absolute;
+    width: 130px;
+    top: 47%;
+    right: 58%;
+}
+
+#dex5 {
+    position: absolute;
+    width: 70px;
+    top: 65%;
+    right: 65%;
+}
+
+#dex6 {
+    position: absolute;
+    width: 120px;
+    top: 67%;
+    right: 35%;
+}
+
+#woody3 {
+    position: absolute;
+    width: 120px;
+    top: 61%;
+    right: 55%;
+}
+
+#dex7 {
+    position: absolute;
+    width: 120px;
+    top: 68%;
+    right: 55%;
+}

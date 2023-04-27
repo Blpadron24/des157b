@@ -17,12 +17,14 @@
 
     function showCatInfo(point, data){
         const cats = [
-            '<i class="far fa-angry"></i>',
-            '<i class="far fa-frown"></i>',
-            '<i class="far fa-meh"></i>',
-            '<i class="far fa-smile"></i>',
-            '<i class="far fa-grin-beam"></i>',
-            '<i class="far fa-grin-tears"></i>'
+            '<img id="dex1" src="images/dex1.svg" alt="dexter">  <img id="woody1" src="images/woody1.svg" alt="woody"> ',
+            '<img id="dex2" src="images/dex2.svg" alt="dexter">',
+            '<img id="dex3" src="images/dex3.svg" alt="dexter">',
+            '<img id="dex4" src="images/dex4.svg" alt="dexter">',
+            '<img id="woody2" src="images/woody2.svg" alt="dexter">',
+            '<img id="dex5" src="images/dex3.svg" alt="dexter">',
+            '<img id="dex6" src="images/dex2.svg" alt="dexter"> <img id="woody3" src="images/woody3.svg" alt="woody">',
+            '<img id="dex7" src="images/dex5.svg" alt="dexter">',
         ];
         document.querySelector('#day').innerHTML = data[point].day;
         document.querySelector('#time').innerHTML = data[point].time;
