@@ -55,4 +55,26 @@
 
     getData();
 
+    let hover1 = document.querySelector('#hover1');
+    let overlayW = document.querySelector('#overlayW');
+
+    let hover2 = document.querySelector('#hover2');
+    let overlayD = document.querySelector('#overlayD');
+
+    hover1.addEventListener('mouseover', function(){
+        overlayW.removeAttribute('class');
+    })
+
+    hover1.addEventListener('mouseout', function(){
+        overlayW.setAttribute('class', 'hidden');
+    })
+
+    hover2.addEventListener('mouseover', function(){
+        overlayD.removeAttribute('class');
+    })
+
+    hover2.addEventListener('mouseout', function(){
+        overlayD.setAttribute('class', 'hidden');
+    })
+
 })(); // end IIFE
