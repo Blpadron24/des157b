@@ -1,0 +1,127 @@
+body{
+    background-color: #fff;
+}
+
+#me{
+    width: 300px;
+}
+header{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
+header img{
+    max-width: 1500px;
+}
+
+p{
+    margin-top: 100px;
+    font-family: 'Roboto Mono', monospace;
+    width: 375px;
+   color: #000000;;
+}
+
+/* moving letters */
+.ml16 {
+    font-family: 'Roboto Mono', monospace;
+    color: #0000003d;
+    padding-top:  20px;
+    font-weight: 400;
+    font-size: 3.5em;
+    letter-spacing: 0.2em;
+    margin: 0;
+    overflow: hidden;
+   
+  }
+  
+.ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  /* gaps to make the page scroll */
+.topGap{
+      height: 40vh;
+  }
+
+    
+section{
+    margin: auto;
+      padding-left: 100px;
+      padding-right: 100px;
+     
+  }
+  /* start of doodles */
+
+.sec1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#spaceDood{
+    width: 500px;
+    display: block;
+    
+}
+
+.sec2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#sfMan{
+    width: 350px;
+    display: block;
+    margin-left: 100px;
+}
+
+.sec3{
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    
+}
+#braynne{
+    width: 500px;
+    display: block;
+    
+}
+
+.sec4{
+    display: flex;
+    justify-content: center;
+}
+
+#buzzO{
+    width: 350px;
+    display: block;
+    padding-left: 50px;
+}
+
+#wuut{
+    width: 500px;
+    display: block;
+}
+
+#flowerMan{
+    width: 500px;
+    display: block;
+}
+
+#waaah{
+    width: 250px;
+    display: block;
+    margin-left: 100px;
+}
+
+#happyan{
+    width: 350px;
+    display: block;
+    padding-left: 50px;
+}
