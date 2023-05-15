@@ -1,9 +1,9 @@
-(function(event){
+(function(){
     'use strict';
     
     AOS.init();
    
- event.preventDefault();
+
 
     if( window.localStorage )
     {
