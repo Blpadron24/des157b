@@ -5,17 +5,7 @@
    
 
 
-    if( window.localStorage )
-    {
-      
-      if( !localStorage.getItem('firstLoad') )
-      {
-        localStorage['firstLoad'] = true;
-        window.location.reload();
-      }  
-      else
-        localStorage.removeItem('firstLoad');
-    }
+    
     //moving letters anime.js
     var textWrapper = document.querySelector('.ml16');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
