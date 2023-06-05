@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"/>
+
+    <script src="script.js" defer></script>
+    <title>Davis Redo</title>
+</head>
+<body>
+    <header>
+       <h2>Davis Redo</h2>
+    </header>
+
+    <section id="start" class="showing">
+        <h1>Davis Redo</h1>
+        <button id="instBttn">instructions</button>
+        <button id="playBttn" class="playBttn">play!</button>
+    </section>
+
+    <section id="instructions" class="hidden">
+        <h2>Davis Redo</h2>
+        <p>Welcome, wanderer and seeker of knowledge!<br><br>During this portion of your travels, you walk through sparse paths, guided by a hawk. The hawk not only lights your way, but also brings you challenges to solve. These challenges gift you with the knowledge of the town you once came from and are now trying to return to. <br><br>Information:<br><br>Davis Rewind is an online escape room themed around the seal of the town of Davis, California. There are a total of 12 puzzles, after each of which you get rewarded with a slice of the seal as well as some knowledge about the town. </p>
+        
+        <button id="playBttn2" class="playBttn">play!</button>
+    </section>
+
+    <main>
+        <!-- puzzle 1 -->
+        <section id="puzzle0" class="hidden">
+            <!-- left section -->
+            <div>
+                <h2>Puzzle 1/12: Crossroads</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <img src="images/crossroads.svg" alt="crossword puzzle" width="140" height="340">
+                    <div>
+                        <h3>Down</h3>
+                        <ul>
+                            <li>1. The trains in town travel on this.</li>
+                            <li>2. The name of the people to whom this land historically belonged.</li>
+                        </ul>
+                        <h3>Across</h3>
+                        <ul>
+                            <li>2. The name of the creek that runs through Davis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class="hint"><a href="hints/hints.html" target="_blank" rel="noopener noreferrer"> hint</a></button>
+                <p>You start down a dirt path, and you are immediately met with a crossroad, and a hawk appears. The hawk tells you that in order to keep going, you need to answer three questions. It then asks you all the questions at once and disappears, leaving you to puzzle them through.</p>
+                <div id="p1form">
+                    <form id="f1">
+                        <div>
+                            <label for="d1Answer">Down 1:</label>
+                            <input type="text" id="d1Answer" required>
+                        </div>
+                        <div>
+                            <label for="d2Answer">Down 2:</label>
+                            <input type="text" id="d2Answer" required>
+                        </div>
+                        <div>
+                            <label for="a1Answer">Across 1:</label>
+                            <input type="text" id="a1Answer" required>                            
+                        </div>
+                        <input type="submit" value="continue down the path" id="s0" class="bttn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- puzzle 2 -->
+        <section id="puzzle1" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 2/12: Time</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <p>Davis wast inc'rp'rat'd in 1917.  2 sc’re annum and one less than a decade past, the town wast did found.  what is yond date?</p>
+                    <p>Insuper, a decade past 1917, ‘t did get its nameth sh'rten'd, doing hence with a quarter of a score characters.  what wast the 'riginal nameth?</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>The hawk tells you a rhyme that leaves you baffled. It then tells you that there are 2 answers, without which you cannot move forward. You see grooves forming in the soil in front of you, forming the rhymes that the hawk spoke.</p>
+                <div id="p2form">
+                    <form>
+                        <div>
+                            <label for="ans1">Date:</label>
+                            <input type="text" id="ans1" required>
+                        </div>
+                        <div>
+                            <label for="ans2">Name:</label>
+                            <input type="text" id="ans2" required>
+                        </div>
+                        <input type="submit" value="continue down the path" id="s1" class="bttn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- puzzle 3 -->
+        <section id="puzzle2" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 3/12: Birds</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <!-- connect the dots goes here -->
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>You have taken only a couple steps when you spot the hawk. The hawk sits in front of you, eyes glimmering and head tilted. In front of the hawk is a scattered collection of pebbles. After some silence, the hawk tells you to identify shape what the pebbles form. You try to step forward, but there is something preventing you from moving.</p>
+                <div id="p3form">
+                    <form>
+                        <label for="bird">What bird shape is in front of the hawk?</label>
+                        <input type="text" id="bird" required>
+                        <input type="submit" value="continue down the path" id="s2" class="bttn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- puzzle 4 -->
+        <section id="puzzle3" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 4/12: Pathways</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <img alt="1914 map of Davisville, CA" src="images/map.jpg" width="500">
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>Ahead of you, you see a large number of paths going every which way. You try to move forward by picking a random path, but the paths scramble. The hawk appears again, and tells you that you need to focus on the town you started from before you continue. </p>
+                <div id="p4form">
+                    <form>
+                        <label for="home">Where is the town that started this journey?</label>
+                        <input type="text" id="home" required>
+                        <input type="submit" value="continue down the path" id="s3" class="bttn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- puzzle 5 -->
+        <section id="puzzle4" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 5/12: Farmland</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <p>To the south, without any northern companions exists the fruit that grows as a collection.</p>
+                    <p>The Byzantine called what is located north starboard the “royal nut”.</p>
+                    <p>Crosswise from the fruit perceived as a nut is a plant from the family of Daisy that is named after Ra’s domain. </p>
+                    <p>To the northwest grows the nut that is only perceived as one, but is a fruit.</p>
+                    <p>Nestled between the false nut and the royal nut is a seed of grass that always starts brown, of which certain types transform to the color of clouds.</p>                    
+                    <p>In the final corner grows the Aztec berry known to be a relative of nightshade and belladonna.</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>After a while, the hawk appears again. You stop. In the space between you and the hawk, a tomato, a grape, an almond, a walnut, a rice grain, and a sunflower appear in a pile. The hawk tells you, "Arrange the plants as I tell you. Once you position them all correctly, I will permit you to continue in your journey".</p>
+                <div id="p5form">
+                    <form>
+                        <label for="plant">List the plants in the correct order. Start at the northwest corner and go clockwise (without spaces or commas).</label>
+                        <input type="text" id="plant" required>
+                        <input type="submit" value="continue down the path" id="s4" class="bttn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- puzzle 6 -->
+        <section id="puzzle5" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 6/12: People</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <img src="images/alphabet.svg">
+                    <p>wypvbgkqjxz</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>The path you're on has been changing from dirt to paved. You have even seen lampposts. The hawk, now slightly bigger, appears in front you and challenges you to a game of alphabet guessing.</p>
+                <!-- other parts(?) of the hangman game here -->
+                <div id="p6form">
+                    <form>
+                        <label for="Gphase">What is the phrase?</label>
+                        <input type="text" id="Gphase" required>
+                        <input type="submit" value="continue down the path" id="s5" class="bttn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- puzzle 7 -->
+        <section id="puzzle6" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 7/12: Eggs</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <p>🙈🙉</p>
+                    <p>👁️ on 🫵🏽</p>
+                    <p>📘👤</p>
+                    <p>🔲 and ⬛, or ☯️</p>
+                    <p>🌠👀</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>The undergrowth around you has started to thin out. The hawk returns with a scroll in its talons. It dropped the scroll in your outstretched palm and croaks out, "Solve this". In the scroll is a list of symbols, seemingly spelling out words and phrases.</p>
+                <div id="p7form">
+                    <form>
+                        <div>
+                            <label for="ph1">Phrase 1:</label>
+                            <input type="text" id="ph1" required>
+                        </div>
+                        <div>
+                            <label for="ph2">Phrase 2:</label>
+                            <input type="text" id="ph2" required>
+                        </div>
+                        <div>
+                            <label for="wd1">Word 1:</label>
+                            <input type="text" id="wd1" required>
+                        </div>
+                        <div>
+                            <label for="ph3">Phrase 3:</label>
+                            <input type="text" id="ph3" required>
+                        </div>
+                        <div>
+                            <label for="wd2">Word 2:</label>
+                            <input type="text" id="wd2" required>
+                        </div>
+                        <input type="submit" value="continue down the path" id="s6" class="bttn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- puzzle 8 -->
+        <section id="puzzle7" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 8/12: Childhood</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <!-- drawing space? -->
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>The paved path has the occasional cobblestone. The hawk drops in front of you a scroll and a curious writing utensil. While you gather what it dropped, it stares at you. "Sit, and draw childlike joy." Taken aback, you look at the hawk. But the hawk and the path in front of you has gone.</p>
+                <!-- what do we want here? a timer? -->
+                <!-- 30s timer -->
+                <form>
+                    <input type="submit" value="continue down the path" id="s7" class="bttn">
+                </form>
+            </div>
+        </section>
+        <!-- puzzle 9 -->
+        <section id="puzzle8" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 9/12: Hunt</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <img src="images/tomatoesPuzzle.png" alt="find the tomatoes">
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>You stop walking because a plant wall blocks your way. The hawk lands on your shoulder and tells you to collect all the tomatoes. You reach out to grab one, and it disappears in your hand. The hawk screeches, and tells you to count as you collect to prevent them disappears.</p>
+                <form id="p9form">
+                    <label for="tomato">How many tomatoes are in the image to your left?</label>
+                    <input type="text" id="tomato" required>
+                    <input type="submit" value="continue down the path" id="s8" class="bttn">
+                </form>
+            </div>
+        </section>
+        <!-- puzzle 10 -->
+        <section id="puzzle9" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 10/12: Waters</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <p>"moeh yb het gpsnir atrew"</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>The cobblestones are more common now. The hawk swoops in front of you, and you feel something fall on your head. A scroll lies behind you, with a nonsensical phrase on it. Perched on a branch nearby, the hawk tells you to tell it what the phrase it.</p>
+                <form id="p10form">
+                    <label for="water">What is the phrase?</label>
+                    <input type="text" id="water" required>
+                    <input type="submit" value="continue down the path" id="s9" class="bttn">
+                </form>
+            </div>
+        </section>
+        <!-- puzzle 11 -->
+        <section id="puzzle10" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 11/12: Townhall</h2>
+                <!-- the box behind the text -->
+                <div>
+                    <img>
+                </div>
+            </div>
+
+            <div>
+                <button class="hint">hint</button>
+                <p>The cobblestones have some color. You trip over one, and find yourself in the center of a town , with a map in your hand. Circled is a building. You follow the directions and find the building. The hawk appears and you freeze. It asks you, "What is the name of this street?"</p>
+                <form id="p11form">
+                    <label for="hallans">Where is city hall located?</label>
+                    <input type="text" id="hallans" required>
+                    <input type="submit" value="continue down the path" id="s10" class="bttn">
+                </form>
+            </div>
+        </section>
+        <!-- puzzle 12 -->
+        <section id="puzzle11" class="layer hidden">
+
+            <!-- left section -->   
+            <div>
+                <h2>Puzzle 12/12: Memory</h2>
+                <div>
+                    <!-- card memory game here -->
+                </div>
+            </div>
+
+            <div>                
+                <button class="hint">hint</button>
+                <p>You find yourself seated at a tavern table. There's cards face-down on the table, and you see 10 of the hawk's face staring at you, almost following you.</p>
+                <form>
+                    <input type="submit" value="end of the path" id="s11" class="bttn">
+                </form>
+            </div>
+        </section>
+
+        <section id="seal_container" class="hidden">
+            <img id="seal" src="#" height="200">
+            <p>More information to come.</p>
+        </section>
+    </main>
+</body>
+</html>
