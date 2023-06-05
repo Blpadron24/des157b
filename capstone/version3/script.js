@@ -123,7 +123,7 @@
       //<-------------------------- puzzle 3 script------------------------>
       function f3CheckAnswers(){
         var userAnswer1 = document.getElementById("bird").value;
-        const bird = 'a';
+        const bird = 'falcon';
         
         if (userAnswer1.length == 0) {
             alert("You must enter an answer to continue...");
