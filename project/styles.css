@@ -1,0 +1,414 @@
+*{
+    transition: all 0.5s;
+}
+/* ------------------------------------------------------- */
+/* body */
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Rowdies', cursive;
+    scroll-behavior: smooth;
+    background: #C3D6C9;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------------------------------------- */
+/* general */
+main{
+    position: relative;
+}
+.layer {
+    position: absolute;
+    width: 96%;
+    transition: opacity 1s;
+    top: 0;
+    left: 0;
+}
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+h1, h2, ul, li{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+p{
+    margin-bottom: 1em;
+    line-height: 1.35em;
+}
+button, input[type=submit]{
+    cursor: pointer;
+}
+/* ------------------------------------------------------- */
+/* text styles */
+h1{
+    font-weight: 700;
+    font-size: 96px;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #0E371C 35.11%, rgba(0, 66, 22, 0.2) 77.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header h2, #instructions h2{
+    color: #0E371C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    padding: 30px 0 0 40px;
+}
+h2{
+    font-weight: 700;
+    font-size: 30px;
+    color: #2A302C;
+}
+h3{
+    color: #7aa788;
+}
+p, li{
+    color: #424845;
+}
+a{
+    text-decoration: none;
+    color: #6F686E;
+}
+/* ------------------------------------------------------- */
+/* start screen, instruction screen styles */
+#start, #instructions{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(images/bg/bg_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#start > h1{
+    margin-top: 250px;
+}
+#start > #instBttn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 200px;
+}
+#start > .playBttn{
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    opacity: 0.9;
+}
+#instructions > h2{
+    font-size: 50px;
+    margin-top: 30px;
+}
+#instructions > #i_cont{
+    background-color: #c3d6c9e3;
+    border: #9FC0AA solid 5px;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+#instructions > div > p{
+    font-size: 22px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #9FC0AA; 
+    border-radius: 20px;
+}
+#i_cont > h3{
+    font-size: 26px;
+    color: #597461;
+}
+#i_cont > h3:last-of-type{
+    text-decoration: underline;
+}
+#instructions > .playBttn{
+    justify-content: center;
+    align-items: center;
+    opacity: 0.95;
+    cursor: pointer;
+    font-size: 28px;
+}
+/* ------------------------------------------------------- */
+/* button styles */
+#instBttn{
+    background-color: #2A302C;
+    opacity: 0.9;
+    border-radius: 60px;
+    padding: 20px 60px;
+    border: none;
+    color: #6F686E;
+    font-size: 20px;
+    font-weight: 700;
+    width: 300px;
+}
+.playBttn{
+    background-color: #C3D6C9;
+    border-radius: 60px;
+    border: none;
+    padding: 10px 80px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #2A302C;
+
+}
+/* ------------------------------------------------------- */
+/* FORM styles */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 480px;
+}
+form > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+}
+form label{
+    font-size: 24px;
+    color:#424845;
+}
+form input[type=text]{
+    height: 30px;
+    width: 275px;
+    background-color: #597461;
+    border: 1px solid #3C4E41;
+    border-radius: 5px;
+}
+input[type=submit]{
+    background-color: #C3D6C9;
+    color: #2A302C;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 60px;
+}
+#p3form input[type=text], #p4form input[type=text], #p5form input[type=text], #p6form input[type=text], #f9 input[type=text], #f10 input[type=text], #f11 input[type=text]{
+    width: 460px;
+}
+/* ------------------------------------------------------- */
+/* section general styles */
+main > section{
+    display: flex;
+    margin: 50px 30px 0 30px;
+    height: 540px;
+    gap: 50px;
+    background-color: #c3d6c99f;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
+}
+section h2{
+    margin-bottom: 40px;
+}
+main > section > div{
+    flex: 1;
+}
+main > section > div:first-of-type > div{
+    height: 400px;
+    background-color: #2A302C;
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.hint{
+    background-color: #2a302cd2;
+    color: #6F686E;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 60px;
+    font-size: 20px;
+    width: 180px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+section > div:last-of-type{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    justify-content: space-between;
+}
+/* ------------------------------------------------------- */
+/* section puzzle 1 styles */
+#puzzle0 > div:first-of-type > div{
+    display: flex;
+    padding: 20px;
+}
+#puzzle0 img{
+    margin: 20px 0 20px 40px;
+}
+#puzzle0 h3{
+    color:#CADBCF;
+    font-size: 24px;
+}
+#puzzle0 h3:last-of-type{
+    margin-top: 0;
+}
+#puzzle0 ul:first-of-type{
+    margin-bottom: 100px;
+}
+#puzzle0 li{
+    color: #CADBCF;
+    list-style-type: none;
+    font-size: 16px;
+}
+#puzzle0 > div:first-of-type > div > div{
+    max-width: 340px;
+}
+/* ------------------------------------------------------- */
+/* section puzzle 2, puzzle 5, puzzle 7 styles */ 
+#puzzle1 > div:first-of-type > div, #puzzle4 > div:first-of-type div, #puzzle6 > div:first-of-type div, #puzzle9 > div:first-of-type > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#puzzle1 > div:first-of-type p, #puzzle4 > div:first-of-type p, #puzzle6 > div:first-of-type div p, #puzzle9 > div:first-of-type p{
+    font-size: 24px;
+    padding: 20px;
+    margin: 0;
+    color: #C3D6C9;
+}
+#puzzle4 > div:first-of-type p{
+    font-size: 16px;
+    padding: 8px 20px;
+}
+#puzzle6 > div >div:first-of-type > p{
+    text-align: center;
+}
+/* ------------------------------------------------------- */
+/* section puzzle 4 styles */ 
+#puzzle3 > div:first-of-type > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#puzzle3 img{
+    border-radius: 10px;
+}
+/* ------------------------------------------------------- */
+/* section puzzle 6 styles */ 
+#puzzle5 > div:first-of-type > div > img{
+    margin: auto;
+}
+#puzzle5 > div:first-of-type > div > p{
+    font-size: 48px;
+    text-align: center;
+    color:#C3D6C9;
+    margin: 20px 0;
+}
+/* ------------------------------------------------------- */
+/*  section puzzle 7 styles */ 
+#puzzle6 .hint{
+    margin: 0;
+}
+#p7form > form{
+    width: 480px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+}
+#p7form > form > div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+#p7form > form > div > input[type=text]{
+    width: 230px;
+}
+#p7form > form > input[type=submit]{
+    width: 230px;
+    font-size: 16px;
+    height: 50px;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+/* ------------------------------------------------------- */
+/* section puzzle 9 styles */
+#puzzle8 > div > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#puzzle8 > div > div:first-of-type > img{
+    margin: auto;
+    border-radius: 5px;
+}
+/* ------------------------------------------------------- */
+/* section puzzle 10 styles */
+#puzzle9 > div:first-of-type p{
+    text-align: center;
+} 
+/* ------------------------------------------------------- */
+/* section puzzle 11 styles */
+#puzzle10 > div > div:first-of-type{
+    display: flex;
+    justify-content: center;
+}
+#puzzle10 > div > div:first-of-type > img{
+    margin: auto;
+    height: 360px;
+    border-radius: 5px;
+}
+/* ------------------------------------------------------- */
+/* seal pop-up styles */
+#seal_container{
+    background-color: #c3d6c9e3;
+    border: #9FC0AA solid 5px;
+    border-radius: 20px;
+    padding: 20px;
+    display: block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+#seal_container h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+#seal{
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#seal_container p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
